@@ -47,7 +47,7 @@
   
   }
 
-  .accordion-body p{
+  .seguros .accordion-body p{
     color: black;
   }
   
@@ -84,27 +84,27 @@
   
   .seguros .collapsed:hover {
     transition: 0.5s;
-    border: red solid 3px;
-    color: red;
+    border: rgb(201, 60, 60) solid 3px;
+    color: rgb(201, 60, 60);
   }
-  .accordion{
+  .seguros .accordion{
     max-width: 860px;
   }
-  .accordion-header {
+  .seguros .accordion-header {
     margin-bottom: 0.5rem !important;
     max-width: 400px;
     min-width: 240px;
     margin: auto;
   }
   
-  .accordion-button {
+  .seguros .accordion-button {
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.2;
   }
   
-  .accordion-button:not(.collapsed){
-    background-color: red!important;
+  .seguros .accordion-button:not(.collapsed){
+    background-color: rgb(201, 60, 60)!important;
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.2;
@@ -113,20 +113,20 @@
     color: white!important;
   }
   
-  .accordion-button::after {
+  .seguros .accordion-button::after {
     content: none!important;
   }
   
-  .accordion-item {
+  .seguros .accordion-item {
     border: none!important;
   }
   
-  .accordion-body {
-    border: 3px solid red;
+  .seguros .accordion-body {
+    border: 3px solid rgb(201, 60, 60);
     max-width: 830px;
     margin: auto;
   }
-  .accordion-button:focus{
+  .seguros .accordion-button:focus{
     box-shadow: none!important;
   }
   
@@ -145,7 +145,7 @@
   }
   
   @media (max-width:760px) {
-    .accordion-body {
+    .seguros .accordion-body {
       max-width: 400px;
       min-width: 220px;
       margin: auto;
@@ -153,37 +153,304 @@
   }
   
   @media (max-width:500px) {
-    .accordion-collapse {
+    .seguros .accordion-collapse {
       margin: auto;
       padding: 0;
     }
-    .accordion-button {
+    .seguros .accordion-button {
       margin: auto;
     }
-    .accordion-item{
+    .seguros .accordion-item{
       padding: 0;
     }
   }
 
 /*FIN BLOQUE*/
 
+/*seccion-formularios-siniestro-y-nuevo-seguro*/ 
+
+.seccion-formularios-siniestro-y-nuevo-seguro {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro img {
+  max-width: 100%;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .boton-solicitud-seguro-nuevo {
+  border: none;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .boton-solicitud-seguro-nuevo:hover {
+  border: solid 2px rgb(253, 255, 160);
+  transition: 1s;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-menos500px {
+  display: none;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro {
+  margin-top: 10px;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .boton-siniestro {
+  border: none;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .boton-siniestro:hover {
+  border: solid 2px rgb(255, 199, 199);
+  transition: 1s;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-menos500px {
+  display: none;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro {
+  display: flex;
+  background-color: rgb(204, 204, 204);
+  height: 50px;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro h2 {
+  color: rgb(153, 153, 153);
+  margin-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro img {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 25%;
+  width: 30px;
+  height: 40px;
+}
+@media screen and (max-width: 500px) {
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro {
+    height: 30px;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .titulo-sinietro img {
+    margin-left: 22%;
+    width: 22px;
+    height: 30px;
+  }
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h3 {
+  text-align: center;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-datos {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-texto-botones {
+  display: flex;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .texto-indicador {
+  padding-left: 5px;
+  border: solid 2px grey;
+  width: 170px;
+  height: 35px;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .botones-addfotos {
+  color: white;
+  background-color: rgb(204, 51, 102);
+  width: 170px;
+  height: 35px;
+  margin-left: 5px;
+}
+.seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .input-cel {
+  width: 520px;
+}
+@media screen and (max-width: 550px) {
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h3 {
+    font-size: 15px;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro h4 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .texto-indicador {
+    margin-top: 10px;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .div-texto-botones {
+    display: inline;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .botones-addfotos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .formulario-siniestro .input-cel {
+    font-size: 15px;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-menos500px {
+    display: block;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-solicitud-seguro-nuevo .img-solicitud-seguro-nuevo-mas500px {
+    display: none;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-menos500px {
+    display: block;
+  }
+  .seccion-formularios-siniestro-y-nuevo-seguro .div-informe-de-siniestro .img-informe-de-siniestro-mas500px {
+    display: none;
+  }
+}
 
 
 
+.div-acordiones-info-extra .div-img {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.div-acordiones-info-extra .img-titulo-serv-grua {
+  max-width: 24%;
+}
+.div-acordiones-info-extra .div-img-grua {
+  text-align: center;
+  background-color: rgb(201, 60, 60);
+}
+.div-acordiones-info-extra .img-seguros-de-grua {
+margin: 5em auto;
+  max-width: 60%;
+  max-height: auto;
+  background-color: white;
+}
+.div-acordiones-info-extra .img-reclamos-de-terceros {
+  max-width: 30%;
+}
+.div-acordiones-info-extra .img-informacion-inportante {
+  max-width: 24%;
+}
+.div-acordiones-info-extra .accordion-button {
+  height: 50px;
+  background-color: rgb(201, 60, 60);
+  margin-top: 10px;
+}
+.div-acordiones-info-extra .div-cuerpo-info-importante {
+  padding-bottom: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background-color: rgb(201, 60, 60);
+}
+.div-acordiones-info-extra .acordion-info-importante {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: aliceblue;
+}
+.div-acordiones-info-extra .cristal {
+  background-color: rgb(105, 241, 153);
+}
+.div-acordiones-info-extra .cristal:hover {
+  background-color: rgb(50, 240, 116);
+}
+.div-acordiones-info-extra .div-cristales-abierto {
+  color: black;
+  background-color: aliceblue;
+  border: solid 5px rgb(105, 241, 153);
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .siniestro-tercero {
+  background-color: rgb(153, 204, 255);
+}
+.div-acordiones-info-extra .siniestro-tercero:hover {
+  background-color: rgb(108, 176, 243);
+}
+.div-acordiones-info-extra .div-siniestro-abierto {
+  color: black;
+  background-color: aliceblue;
+  border: solid 5px rgb(153, 204, 255);
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .ruedas {
+  background-color: rgb(153, 102, 255);
+}
+.div-acordiones-info-extra .ruedas:hover {
+  background-color: rgb(127, 80, 221);
+}
+.div-acordiones-info-extra .div-ruedas-abierto {
+  color: black;
+  background-color: aliceblue;
+  border: solid 5px rgb(153, 102, 255);
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .chocaste {
+  background-color: rgb(255, 153, 255);
+}
+.div-acordiones-info-extra .chocaste:hover {
+  background-color: rgb(241, 101, 241);
+}
+.div-acordiones-info-extra .div-chocaste-abierto {
+  color: black;
+  background-color: aliceblue;
+  border: solid 5px rgb(255, 153, 255);
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .btn {
+  color: aliceblue;
+  margin-top: 10px;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.div-acordiones-info-extra .div-abiertos {
+  width: 45%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-acordiones-info-extra .accordion-body{
+  margin: 0;
+  padding: 0;
+}
+
+.div-acordiones-info-extra .accordion-button::after {
+  content: none!important;
+}
+
+.div-acordiones-info-extra .accordion-button:not(.collapsed){
+  background-color: rgb(201, 60, 60)!important;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white!important;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 824px) {
+  .div-acordiones-info-extra .accordion-button {
+    height: 30px;
+  }
+  .div-acordiones-info-extra .img-informacion-inportante {
+    max-width: 60%;
+  }
+  .div-acordiones-info-extra .img-reclamos-de-terceros {
+    max-width: 70%;
+  }
+  .div-acordiones-info-extra .img-titulo-serv-grua {
+    max-width: 50%;
+  }
+  .div-acordiones-info-extra .btn {
+    width: 60%;
+  }
+  .div-acordiones-info-extra .div-abiertos {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .div-acordiones-info-extra .btn {
+    width: 95%;
+  }
+  .div-acordiones-info-extra .div-abiertos {
+    width: 95%;
+  }
+}
 
 
 
@@ -231,7 +498,7 @@
 .boton-enviar-form{
     width: 80px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(201, 60, 60);
     border: solid rgba(255, 0, 0, 0.027) 1px;
     color: aliceblue;    
     
@@ -315,7 +582,7 @@ p{color: aliceblue;}
     display: inline-block;
     position: relative;
  }
-.boton-siniestro{
+/* .boton-siniestro{
     position: absolute;
     background-color: brown;
     width: 8%;
@@ -323,7 +590,7 @@ p{color: aliceblue;}
     font-size: 30px;
     margin-left: 65.9%;
     margin-top:  11%;
-}
+} */
 
 .contenedor-diferentes-seguros{
     margin-top: 20px;

@@ -41,7 +41,7 @@ app.post("/send-email", (req, res) => {
                 res.status(500).send(error.message)
             } else {
                 console.log('email enviado')
-                res.redirect('/')
+                res.rgb(201, 60, 60)irect('/')
             }
         })
     }

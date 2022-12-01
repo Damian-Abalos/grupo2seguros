@@ -32,9 +32,17 @@ function changeStateBtn(indexElement) {
     }
 
 }
-
+let cedulafrente = document.getElementById('input-cedula-frente')
+let toinsert = document.getElementById('insertfile')
+function mostrarimg() {
+    alert(cedulafrente); 
+}
 
 function validarConsulta(){
+
+    // e.preventDefault();
+    
+
 
     if (nombre.value === null || consulta.value === '') {
         errorNombre.innerHTML = `ingresa tu nombre`
@@ -51,8 +59,10 @@ function validarConsulta(){
     if (consulta.value === null || consulta.value === '') {
         errorConsulta.innerHTML = `ingresa tu consulta`
     }    
-    if (nombre.value != '' || email.value != '' || telefono.value != '' || consulta.value != '') {
-        alert('consulta enviada')        
-    } 
+    if (nombre.value == '' || email.value == '' || telefono.value == '' || consulta.value == '') {
+        alert('por favor, complete todos los campose')        
+    } else {
+        alert('consulta enviada')
+    }
     
 }

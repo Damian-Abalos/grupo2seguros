@@ -41,10 +41,42 @@ app.post("/send-email", (req, res) => {
                 res.status(500).send(error.message)
             } else {
                 console.log('email enviado')
-                res.rgb(201, 60, 60)irect('/')
+                res.redirect('/')
             }
         })
     }
+})
+
+app.post('/send-files', (req,res) => {
+    let fotos = req.body
+
+    console.log(fotos);
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        port: 587,
+        auth: {
+            user: 'damian.vegtech@gmail.com',
+            pass: password
+        }
+    })
+
+    const mailOptions = {
+        from: nombre,
+        to: 'damian.vegtech@gmail.com',
+        subject: 'Nuevo reporte',
+        html: fotos
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            res.status(500).send(error.message)
+        } else {
+            console.log('fotos enviadas')
+            res.redirect('/')
+        }
+    })
 })
 
 app.listen(8080, () => {

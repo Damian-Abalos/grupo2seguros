@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo 2 Seguros</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <header class="bootstrap-nav">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light navbar bg-light">
+      <div class="ms-3">
+        <a class="navbar-brand" href="#">
+          <img src="./imagenes/LOGO MUESTRA GRUPO 2_Mesa de trabajo 1.png" alt="logo seguro grupo 2" width="120"
+            height="34">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#seccion-nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-seguros">Seguros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#informes-siniestros">Siniestros</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#consultas-seccion">Novedades</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicio-de-grua" onclick="desplegarDesdeNav('boton-grua','collapseOne')">Servicio grua</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reclamo-de-terceros" onclick="desplegarDesdeNav('boton-terceros','collapseTwo')">Reclamos terceros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info-importante" onclick="desplegarDesdeNav('boton-importante','collapseThree')">Info importante</a>
+          </li>
+        </ul>
+      </div>
+
+
+      </div>
+    </nav>
+  </header>
+  
+  <div class="seccion-banner">
+    <img class="img-banner-mas-500px"
+      src="./imagenes/img banner principal +500px_Mesa de trabajo 1_Mesa de trabajo 1.png" alt="">
+    <img class="img-banner-menos-500px" src="./imagenes/img banner principal -500px_Mesa de trabajo 1.png" alt="">
+  </div>
+
+  <section class="seguros" id="seccion-seguros">
+    <div class="div-seguros mb-3">
+      <div class="contenedor-log-seguro-h1">
+        <img class="img-logo-seguro" src="./imagenes/logo seguros.png" alt="logo seguro">
+        <h1 class="h1-seguros">SEGUROS</h1>
+      </div>
+    </div>
+    <button onclick="sendEmailData()" class="btn btn-danger">tocame esta</button>
+    <div class="botones-seguros">
+      <div class="accordion w-100 row m-auto" id="accordionSeguros">
+
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12 mt-2">
+          <h2 class="accordion-header" id="acordion-motos">
+            <button class="accordion-button boton-seguro collapsed d-flex align-items-center" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseMotos" aria-expanded="true"
+              aria-controls="collapseMotos" onclick="changeStateBtn(0)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                MOTOS
+              </h3>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseMotos" class="accordion-collapse collapse mobile" aria-labelledby="acordion-motos"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p>Las <strong> motos </strong>son uno de los medios de transporte mas utilizados hoy en día ,pero tambien
+              los más expuestos e inseguros. <br>
+              Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás. <br>
+              Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+              Responsabilidad Civil <br>
+              Robo <br>
+              Cobertura Premium <br>
+              Contactanos por una cotización sin cargo.<br>
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20moto"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+
+          </div>
+        </div>
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12 mt-2">
+          <h2 class="accordion-header" id="acordion-bicicletas">
+            <button class="accordion-button boton-seguro collapsed " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseBicicletas" aria-expanded="false" aria-controls="collapseBicicletas"
+              onclick="changeStateBtn(1)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>BICICLETAS</h3>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseMotos" class="accordion-collapse no-mobile collapse" aria-labelledby="acordion-motos"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p>Las <strong> motos </strong>son uno de los medios de transporte mas utilizados hoy en día ,pero tambien
+              los más expuestos e inseguros. <br>
+              Por eso es importante tener un buen seguro por tu tranquilidad y la de los demás. <br>
+              Tenemos las mejores coberturas para proteger tu moto vaya donde vaya!! <br>
+              Responsabilidad Civil <br>
+              Robo <br>
+              Cobertura Premium <br>
+              Contactanos por una cotización sin cargo.<br>
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20moto"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+        <div id="collapseBicicletas" class="accordion-collapse collapse " aria-labelledby="acordion-bicicletas"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Bicicletas:</strong> <br>
+              Es un medio muy utilizado por sus múltiples beneficios para la salud y protección del medio
+              ambiente,también utilizado para distracción personal. <br>
+              Ahora podés tener la cobertura adecuada <br>
+              Brindamos excelentes coberturas para proteger al asegurado y su bicicleta ante robo, accidentes personales
+              y responsabilidad civil, pudiendo incluir el robo de efectos personales. <br>
+              Contactanos por una cotización sin cargo. <br>
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20bicicleta"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-autos">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseAutos" aria-expanded="false" aria-controls="collapseAutos"
+              onclick="changeStateBtn(2)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                AUTOMOTOR
+              </h3>
+            </button>
+          </h2>
+        </div>
+
+
+        <div id="collapseAutos" class="accordion-collapse mobile collapse " aria-labelledby="acordion-autos"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p>FALTA INFO AUTOMOTOR</p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20automotor"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-hogar">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseHogar" aria-expanded="false" aria-controls="collapseHogar"
+              onclick="changeStateBtn(3)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                HOGAR
+              </h3>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseAutos" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-autos"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p>FALTA INFO AUTOMOTOR
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20automotor"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+        <div id="collapseHogar" class="accordion-collapse collapse " aria-labelledby="acordion-hogar"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Hogar:</strong> <br>
+              Tu vivienda es tu lugar más seguro.<br>
+              Protege tu patrimonio. <br>
+              Vivienda permanente y transitoria. <br>
+              Contamos con una gama muy variada de coberturas para tu hogar y bienes. <br>
+              Cobertura de Incendio. <br>
+              Cobertura de robo mobiliario. <br>
+              Cobertura de electrodomésticos y aparatos tecnológicos. <br>
+              Seguro de Mascotas.<br>
+              Accidentes personales.<br>
+              Celulares. <br>
+              Responsabilidad Civil y comprensiva.<br>
+              Instrumentos musicales. <br>
+              Seguro de Incendio para alquilar. <br>
+              Y mucho más... <br>
+              Adecuamos las coberturas a tus necesidades. <br>
+              Contactanos por una cotización sin cargo. <br>
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20hogar"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-motos">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseComercios" aria-expanded="false" aria-controls="collapseComercios"
+              onclick="changeStateBtn(4)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                COMERCIOS
+              </h3>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseComercios" class="accordion-collapse mobile collapse " aria-labelledby="acordion-comercios"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Comercios:</strong> <br>
+              Protege tu comercio e industria con nuestras coberturas. <br>
+              Hay muchas opciones para brindarte la mejor protección. <br>
+              Integral de comercio. <br>
+              Oficinas. <br>
+              Consorcios. <br>
+              Escuelas. <br>
+              Comercios mayoristas y minoristas. <br>
+              Incendio. <br>
+              Cobertura para carteles y marquesinas. <br>
+              Transporte de mercaderías. <br>
+              Responsabilidad civil general. <br>
+              Contactanos por una cotización sin cargo.
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20comercio"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-accidentes">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseAccidentes" aria-expanded="false" aria-controls="collapseAccidentes"
+              onclick="changeStateBtn(5)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                ACCIDENTES
+              </h3>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseComercios" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-comercios"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Comercios:</strong> <br>
+              Protege tu comercio e industria con nuestras coberturas. <br>
+              Hay muchas opciones para brindarte la mejor protección. <br>
+              Integral de comercio. <br>
+              Oficinas. <br>
+              Consorcios. <br>
+              Escuelas. <br>
+              Comercios mayoristas y minoristas. <br>
+              Incendio. <br>
+              Cobertura para carteles y marquesinas. <br>
+              Transporte de mercaderías. <br>
+              Responsabilidad civil general. <br>
+              Contactanos por una cotización sin cargo.
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20comercio"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+        <div id="collapseAccidentes" class="accordion-collapse collapse " aria-labelledby="acordion-accidentes"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Accidentes:</strong> <br>
+              Esta cobertura cubre al asegurado por muerte , incapacidad parcial o permanente y gastos de farmacia. <br>
+              Hay muchas opciones. <br>
+              AP 24 hs autónomos. <br>
+              AP horario laboral. <br>
+              Todos los rubros. <br>
+              AP deportivo. <br>
+              AP mala praxis médica. <br>
+              AP COVID. <br>
+              AP tránsito. <br>
+              AP estudiantiles. <br>
+              Contactanos por una cotización sin cargo.
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20accidentes"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-caucion">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCaucion" aria-expanded="false" aria-controls="collapseCaucion"
+              onclick="changeStateBtn(6)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                CAUCIÓN
+              </h3>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseCaucion" class="accordion-collapse mobile collapse " aria-labelledby="acordion-caucion"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p> <strong>Caución: <br> Este seguro es un contrato de garantía que otorga mejores beneficios que los
+                habituales como aval bancario
+                Pueden ser los siguientes:</strong> <br>
+
+              <br>
+
+              1. Obra Pública o Privada. <br>
+              2. Suministros y/o Servicios Públicos o Privados. <br>
+              3. Garantías de Tenencia Pública o Privada. <br>
+              4. Garantías Aduaneras. <br>
+              5. Garantías de Concesión. <br>
+              6. Garantías Judiciales. <br>
+              7. Garantías para el Ejercicio de una Actividad o Profesión. <br>
+              8. Garantías de Alquiler. <br>
+              Contactanos por una cotización sin cargo. <br>
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20caución"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+        <div class="accordion-item col-lg-6 col-md-6 col-sm-12  mt-2">
+          <h2 class="accordion-header" id="acordion-otros">
+            <button class="accordion-button boton-seguro collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOtros" aria-expanded="false" aria-controls="collapseOtros"
+              onclick="changeStateBtn(7)">
+              <img class="img-botones-seguro" src="./imagenes/boton imagen para seguros modo desactivado.png"
+                alt="imagen boton">
+              <img class="img-botones-seguro-abierto"
+                src="./imagenes/imagen botones abiertos 2 aspas_Mesa de trabajo 1.png" alt="" style="display: none;">
+              <h3>
+                OTROS
+              </h3>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseCaucion" class="accordion-collapse no-mobile collapse " aria-labelledby="acordion-caucion"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Caución: <br> Este seguro es un contrato de garantía que otorga mejores beneficios que los
+                habituales como aval bancario
+                Pueden ser los siguientes:</strong> <br>
+
+              <br>
+
+              1. Obra Pública o Privada. <br>
+              2. Suministros y/o Servicios Públicos o Privados. <br>
+              3. Garantías de Tenencia Pública o Privada. <br>
+              4. Garantías Aduaneras. <br>
+              5. Garantías de Concesión. <br>
+              6. Garantías Judiciales. <br>
+              7. Garantías para el Ejercicio de una Actividad o Profesión. <br>
+              8. Garantías de Alquiler. <br>
+              Contactanos por una cotización sin cargo. <br>
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro%20de%20caución"
+              class="btn btn-danger" target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+        <div id="collapseOtros" class="accordion-collapse collapse " aria-labelledby="acordion-otros"
+          data-bs-parent="#accordionSeguros">
+          <div class="accordion-body">
+            <p><strong>Otros:</strong> <br>
+              También contamos con otras coberturas para brindarte <br>
+              - Embarcaciones de placer. <br>
+              -Seguros de viajeros. <br>
+              -Responsabildad profesional. <br>
+              -Seguros de Vida. <br>
+              Contactanos por una cotización sin cargo
+
+            </p>
+            <a aria-label="Chat on WhatsApp"
+              href="https://wa.me/541133710828?text=Hola%20quiero%20cotizar%20mi%20seguro" class="btn btn-danger"
+              target="_blank"> COTIZAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="seccion-formularios-siniestro-y-nuevo-seguro">
+
+    <div class="seccion-formularios-siniestro-y-nuevo-seguro">
+      <div class="div-solicitud-seguro-nuevo">
+        <a class="boton-solicitud-seguro-nuevo" aria-label="Chat on WhatsApp" target="_blank"
+          href="https://wa.me/541133710828?text=Deseo%20solicitar%20un%20seguro"
+          data-bs-target="#collapseSolicitudNuevoSeguro">
+          <img class="img-solicitud-seguro-nuevo-mas500px"
+            src="./imagenes/img solicitud de seguro mas 500px_Mesa de trabajo 1.png" alt="solicitud de seguro nuevo">
+          <img class="img-solicitud-seguro-nuevo-menos500px"
+            src="./imagenes/solicitud de seguro -500px_Mesa de trabajo 1.png" alt="solicitud de seguro nuevo">
+        </a>
+
+        <div class="div-informe-de-siniestro" id="informes-siniestros">
+          <button class="boton-siniestro" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsInformeSiniestro" aria-expanded="false" aria-controls="collapsInformeSiniestro">
+            <img class="img-informe-de-siniestro-mas500px"
+              src="./imagenes/informe_de_siniestro_img_mas_500px_Mesa_de_trabajo_1.png" alt="informe de siniestro">
+            <img class="img-informe-de-siniestro-menos500px"
+              src="./imagenes/informe de siniestro img -500px_Mesa de trabajo 1.png" alt="informe de siniestro">
+          </button>
+          <div class="collapse" id="collapsInformeSiniestro">
+            <div class="div-siniestro abierto">
+              <div class="titulo-sinietro"><img src="./imagenes/img titulo siniestros abierto_Mesa de trabajo 1.png"
+                  alt="">
+                <h2>SINIESTRO</h2>
+              </div>
+              <div class="formulario-siniestro">
+                <!-- <form action=""> -->
+                  <div class="datos-siniestro">
+                    <div class="div-h3-siniestro"></div>
+                    <h3>En caso de cualquier siniestro, SIEMPRE, pedirle al/los terceros la siguiente documentacion:
+                    </h3>
+                    <div class="div-datos">
+                      <h4>DATOS DEL ASEGURADO</h4>
+                      <div class="datos-asegurado">
+
+                        <!-- <form action="/send-files" method="POST" enctype="multipart/form-data">
+                          <label for="foto_cedula_frente" class="texto-indicador text-dark">Cedula verde y/o
+                            azul</label>
+                          <input required id="foto_cedula_frente" name="foto_cedula_frente" type="file" />
+                          <label for="foto_cedula_dorso" class="texto-indicador text-dark">Cedula verde y/o
+                            azul</label>
+                          <input required id="foto_cedula_dorso" name="foto_cedula_dorso" type="file" />
+                          <input type="submit" value="Upload Files">
+                        </form> -->
+
+
+                        <div class="div-texto-botones">
+                          <form enctype="multipart/form-data">
+                            <input type="file" name="foto_cedula_frente" id="foto_cedula_frente" required accept=".jpg, .png, .jpeg">
+                            <!-- <input type="file" name="foto_cedula_dorso" id="foto_cedula_dorso" required accept=".jpg, .png, .jpeg"> -->
+
+
+
+                            <button id="uploadImages" type="button">enviar</button>
+                          </form>
+
+
+
+                          <div class="insertfile"></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">Registro</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">DNI</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">Seguro</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-cell">
+                          <input class="input-cel" type="tel" placeholder="Ingrese tel de contacto">
+                        </div>
+
+
+                      </div>
+
+                      <h4>DATOS DEL TERCERO</h4>
+                      <div class="datos-tercero">
+
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">Cedula verde y/o azul</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">Registro</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button> </div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">DNI</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-texto-botones">
+                          <p class="texto-indicador text-dark">Seguro</p>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto frente</button></div>
+                          <div class="div-button"><button class="botones-addfotos">Adjuntar foto dorso</button></div>
+                        </div>
+                        <div class="div-cell">
+                          <input class="input-cel" type="tel" placeholder="Ingrese tel contacto">
+                        </div>
+
+
+                        <div>
+                          <h4>Descripcion del siniestro</h4>
+                          <textarea class="descripcion-siniestro w-100 p-2" cols="30" rows="10"
+                            placeholder="Ingrese la descripcion mas completa posible para su correcta denuncia,fecha,direccion exacta,calles aledañas, horario y descripcion"></textarea>
+
+                        </div>
+                        <div class="div-boton-siniestro">
+                          <button class="boton-form-siniestro">ENVIAR</button>
+                        </div>
+
+                      </div>
+                    </div>
+                <!-- </form> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="diferentes-seguros">
+      <div class="contenedor-diferentes-seguros">
+
+        <div class="contenedor-carrucel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/libra san cristobal seguros baston seguros hdi seguros imagen carruceel-01.png"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/seguros rivadavia sura rus swiss medical para carrucel-01.png"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <img class="img-diferentes-seguros-banner" src="./imagenes/baner de diferentes seguros_Mesa de trabajo 1.png"
+          alt="imagen de seguros">
+      </div>
+    </section>
+
+    <div class="div-acordiones-info-extra">
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item" id="servicio-de-grua">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" id="boton-grua"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="div-img">
+                <img class="img-titulo-serv-grua" src="./imagenes/img titulo seguro de grua_Mesa de trabajo 1.png"
+                  alt="titulo servicios de grua" />
+              </div>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse mt-4" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="div-serv-gruas">
+
+                <div class="div-numero">
+                  <img src="./imagenes/img-servicios-grua/img-seguro-rivadavia_Mesa de trabajo 1.png" alt="">
+                  <p>
+                    <strong>tuasistencia.redsos.com.ar <br>
+                      0800 - 666 - 6789 <br>
+                      SMS al 70703 <br> </strong>
+                  <div class="div-grua-flex-wsp">
+                    <img class="img-grua-wsp" src="./imagenes/logo-whats-para-servicio-grua_Mesa de trabajo 1.png"
+                      alt="logo wsp">
+                    <p class="p"><strong>11-2808-0012</strong></p>
+                  </div>
+
+                  </p>
+                </div>
+
+                <div class="div-numero">
+                  <img src="./imagenes/img-servicios-grua/img-libra-seguros_Mesa de trabajo 1.png" alt="">
+                  <p>
+                    <strong>moveonbylibra.com.ar <br>
+                      0800 - 122 - 6883 <br></strong>
+                  <div class="div-grua-flex-wsp">
+                    <img class="img-grua-wsp" src="./imagenes/logo-whats-para-servicio-grua_Mesa de trabajo 1.png"
+                      alt="logo wsp">
+                    <p class="p"><strong>11-2720-1477</strong></p>
+                  </div>
+
+                  </p>
+                </div>
+
+                <div class="div-numero">
+                  <img src="./imagenes/img-servicios-grua/img-rio-uruguay-seguros_Mesa de trabajo 1.png" alt="">
+                  <p><strong>0800 - 444 - 1441</strong></p>
+                </div>
+
+                <div class="div-numero">
+                  <img src="./imagenes/img-servicios-grua/ig-sura-seguros_Mesa de trabajo 1.png" alt="">
+                  <p><strong>0800 - 999 - 76925</strong> </p>
+                </div>
+
+                <div class="div-numero">
+                  <img src="./imagenes/img-servicios-grua/img-san-cristobal-seguro_Mesa de trabajo 1.png" alt="">
+                  <p> <strong>0810 - 222 - 8887 <br>0810 - 444 - 0100</strong></p>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="reclamo-de-terceros">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" id="boton-terceros"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="div-img">
+                <img class="img-reclamos-de-terceros"
+                  src="./imagenes/img titulo reclamo de terceros_Mesa de trabajo 1.png" alt="" />
+              </div>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="centrar-texto py-3">
+                <strong>RECLAMOS DE TERCEROS.</strong> <br />
+                Nosotros le brindamos un asesoramiento integral del siniestro,ya
+                que contamos con una abogada de gran experiencia en el rubro de
+                Seguros que se ocupa junto a mi de realizar el reclamo suyo en la
+                <strong>CIA</strong>, Del tercero que lo chocó. <br />Todo este
+                servicio es sin costo adicional para nuestros asegurados. <br />
+                De esta Manera seguimos sumando servicios de calidad y eficacia,
+                siempre para favorecer y ayudar a nuestros asegurados. <br />
+                <strong>CONTACTO: <br />
+                  TATIANA MASSIDA <br /></strong>
+                <code>gestionintegralsiniestros@gmail.com</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="info-importante">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" id="boton-importante"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <div class="div-img">
+                <img class="img-informacion-inportante"
+                  src="./imagenes/imagen titulo informacion importante_Mesa de trabajo 1.png" alt="" />
+              </div>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="div-cuerpo-info-importante">
+              <div class="acordion-info-importante">
+                <button class="btn cristal" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#cristal-roto-cerrado" aria-expanded="false" aria-controls="collapseExample">
+                  <strong>SI TE ROMPEN UN CRISTAL</strong>
+                </button>
+                <div class="collapse" id="cristal-roto-cerrado">
+                  <div class="div-cristales-abierto div-abiertos">
+                    <p>
+                      <strong> - Rotura Cristales - Para realizar denuncia y reposición de Cristales indicar:</strong>
+                      <br>
+                      Día, hora y lugar (calle, localidad) del Siniestro. <br>
+                      Indicar tipo de cristal parabrisas, lateral, portón. <br>
+                      Enviar una foto que se vea el daño y alguna la patente. <br>
+                      Enviar foto de su registro. <br>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acordion-info-importante">
+                <button class="btn siniestro-tercero" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#siniestro-con-tercero" aria-expanded="false" aria-controls="collapseExample">
+                  <strong>SI TUVISTE UN SINIESTRO CON UN TERCERO</strong>
+                </button>
+                <div class="collapse" id="siniestro-con-tercero">
+                  <div class="div-siniestro-abierto div-abiertos">
+                    <p>
+                      <strong> - Reclamos de terceros -</strong> <br> Para realizar su reclamo en la CIA. Del tercero
+                      que lo choco, necesito: <br>
+                      Cédula verde y/o azul en caso que corresponda. <br>
+                      Registro del conductor al momento del siniestro. <br>
+                      DNI del titular del vehículo y conductor (si es distinto de ambos). <br>
+                      Fotos que se vea el daño y en alguna la patente. <br>
+                      Un presupuesto de reparación completa. <br>
+                      Brindo el servicio de hacer el reclamo junto con una abogada de mi equipo sin ningún costó
+                      adicional. <br>
+                      Enviar toda la documentación legible y frente y dorso. <br>
+                      Los reclamos de terceros suelen tardar de dos a tres meses, depende de las circunstancias y de que
+                      Cía.,sea la del tercero que lo choco. Junto con la abogada trabajamos para que todo se resuelva
+                      rápido y de la mejor manera posible
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acordion-info-importante">
+                <button class="btn ruedas" type="button" data-bs-toggle="collapse" data-bs-target="#robaron-ruedas"
+                  aria-expanded="false" aria-controls="collapseExample">
+                  <strong>SI TE ROBARON UNA O MAS RUEDAS</strong>
+                </button>
+                <div class="collapse" id="robaron-ruedas">
+                  <div class="div-ruedas-abierto div-abiertos">
+                    <p>
+                      <strong>- Robo de ruedas - Para realizar denuncia y reposición de ruedas indicar:</strong> <br>
+                      Día, hora y lugar (calle, localidad) del robo. <br>
+                      Indicar de qué lado es la rueda (delantera, trasera, izquierda, derecha) o si es rueda de aux.
+                      <br>
+                      Indicar tipo de rueda y llanta. <br>
+                      Marca, medida, modelo, aleación. <br>
+                      Enviar una foto que se vea la rueda faltante y una foto de cualquier otra rueda que este puesta
+                      para cotejar modelo. <br>
+                      Si son dos o más ruedas hacer denuncia policial y enviármela. <br>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acordion-info-importante">
+                <button class="btn chocaste" type="button" data-bs-toggle="collapse" data-bs-target="#si-chocaste"
+                  aria-expanded="false" aria-controls="collapseExample">
+                  <strong>SI CHOCASTE</strong>
+                </button>
+                <div class="collapse" id="si-chocaste">
+                  <div class="div-chocaste-abierto div-abiertos">
+                    <p>
+                      <strong>- Solicitud denuncia de choque correcta - Datos para hacer la denuncia automotor:
+                      </strong> <br>
+                      Día: <br>
+                      Lugar: ( calles,barrio,localidad). <br>
+                      Hora: <br>
+                      Descripción detallada del siniestro: <br>
+                      Daños de su vehículo: <br>
+                      Datos del tercero con el que chocó: ( si hay más de uno detallar todos). <br>
+                      Indicar datos completos del conductor y titular (si son distintos), Cía. De seguros ,
+                      teléfono,cédula,registro, DNI. <br>
+                      Recordar pedir todos esos datos al tercero con el que chocó y sacarle fotos a todo <br>
+                      Daños del vehículo del tercero <br>
+                      Enviarme foto de tu registro y todas las fotos que tengas relacionadas al choque y al tercero.
+                      <br>
+                      En el caso que usted tenga cobertura TODO RIESGO: <br>
+                      <strong>Además de enviar los datos para poder realizar la denuncia hay que realizar lo
+                        siguiente:</strong> <br>
+                      1-Inspeccionar su vehículo: puede ser en un taller de la su Cia. o bien puede ser en un taller que
+                      usted desee. <br>
+                      En este último caso debe indicar los datos del taller para coordinar correctamente dicha
+                      inspección (dirección exacta y localidad, horario de atención, nombre del taller y teléfono), Las
+                      inspecciones se coordinan con 72 hs de anticipación. <br>
+                      2- Análisis del choque y los valores: Se envía la orden al taller y se compran repuestos para
+                      luego proceder al arreglo de su vehículo. <br>
+
+                      <strong>NOTA:</strong> <br> Su seguro le paga todo el arreglo MENOS ,el valor de la Franquicia /
+                      La franquicia en caso que el choque sea culpa suya o no exista un tercero para reclamar (o no
+                      tenga seguro el tercero)
+                      la debe abonar usted/ En caso que el choque sea culpa del tercero y este correcto, su seguro, se
+                      reclama
+                      a la cia de seguro del tercero que lo choco / En caso que corresponda reclamar la Fcia, nosotros
+                      tramitamos dicha gestión.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acordion-info-importante">
+                <button class="btn franquicias" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#reclamo-franquicias" aria-expanded="false" aria-controls="collapseExample">
+                  <strong>RECLAMO DE FRANQUICIAS</strong>
+                </button>
+                <div class="collapse" id="reclamo-franquicias">
+                  <div class="div-franquicias-abierto div-abiertos">
+                    <p>
+                      <strong> - Para realizar el reclamo de su Fcia.por favor enviar la siguiente documentación suya y
+                        de su vehículo :</strong> <br>
+                      DNI. <br>
+                      Registro. <br>
+                      Cédula verde. <br>
+                      Fotos que se vea el daño y la patente. <br>
+                      Toda la documentación legible y frente y dorso. <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acordion-info-importante">
+                <button class="btn seguro" type="button" data-bs-toggle="collapse" data-bs-target="#seguro-nuevo"
+                  aria-expanded="false" aria-controls="collapseExample">
+                  <strong>SOLICITUD NUEVO SEGURO</strong>
+                </button>
+                <div class="collapse" id="seguro-nuevo">
+                  <div class="div-seguro-abierto div-abiertos">
+                    <p>
+                      <strong> - Solicitud de NUEVO SEGURO:</strong> <br>
+                      Cedula verde frente y dorso. <br>
+                      DNI y registro del titular frente y dorso. <br>
+                      Indicar forma de pago (Tarjeta de crédito - enviar foto solamente del frente / CBU - enviar los 22
+                      numeros, Banco y tipo de cuenta). <br>
+                      Si tiene GNC, enviar foto de cedula GNC y fotos del equipo físico. <br>
+                      Enviar fotos del vehiculo ( una de cada lateral, una de frente y otra trasera, siempre que el
+                      vehiculo salga entero y se pueda visualizar la patente y una foto de la rueda de auxilio).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="seccion-nosotros" id="seccion-nosotros">
+      <div class="div-nosotros">
+        <div class="contenedor-log-seguro-h1">
+          <img class="img-logo-seguro" src="./imagenes/logo seguros.png" alt="logo seguro">
+          <h2 class="h1-seguros">NOSOTROS</h2>
+        </div>
+      </div>
+      <div class="nosotros-texto m-auto">
+        <p class="text-dark">
+          GRUPPO2 SEGUROS somo una empresa de seguros generales, con la experiencia de 20 años que nos avala en el
+          mercado
+          asegurador. <br>
+          Trabajamos con mucha eficacia y energía para brindarles un correcto asesoramiento y cobertura. <br>
+          Nuestro trabajo se basa principalmente en la honestidad, la confianza y la atención personalizada, haciendo un
+          seguimiento de cada caso y persona para que usted pueda estar tranquilo que nuestra presencia y ayuda es
+          constante. <br>
+          Nos destacamos en brindar soluciones rápidas, contención y un trato personalizado de calidad a cada uno de
+          nuestros asegurados. <br>
+          Contamos con el respaldo de las mejores compañías aseguradoras.
+        </p>
+      </div>
+    </section>
+
+    <!-- Formulario de consultas -->
+    <section id="consultas-seccion" class="consultas-seccion">
+      <div class="div-padre">
+        <h2 class="titulo-sec-consultas">Consultas</h2>
+        <h5 class="subtitulo-sec-consultas">solicite su cotizacion sin cargo.</h5>
+        <div class="div-form">
+          <form class="form" onsubmit="return validarConsulta()" id="formulario-de-consultas">
+            <p class="text-danger mb-0" id="error-nombre"></p>
+            <input class="form-im" name="nombre" id="nombre" placeholder="nombre" type="name">
+            <p class="text-danger mb-0" id="error-email"></p>
+            <input class="form-im" name="email" id="email" placeholder="email" type="email">
+            <p class="text-danger mb-0" id="error-telefono"></p>
+            <input class="form-im" name="telefono" id="telefono" placeholder="telefono" type="tel">
+            <p class="text-danger mb-0" id="error-consulta"></p>
+            <textarea placeholder="consulta" name="consulta" class="form-im " id="consulta" type="text"
+              style="height: 100px"></textarea>
+            <div class="div-btn-form">
+              <button id="enviar-form" class="boton-enviar-form">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion contacto -->
+    <div class="seccion-contacto" id="seccion-contacto">
+      <div class="div-sentrar-contacto">
+        <div class="div-contacto-h4">
+          <h4 class="contacto-h4">CONTACTO</h4>
+        </div>
+
+        <div class="div-contacto-yasmin">
+          <h6 class="contacto-h6">Yasmin Anabella Damato</h6>
+          <p class="contacto-p">Productora seguros <br>MN 66566 <br>Tel: 11.3635.3513</p>
+        </div>
+        <div class="div-contacto-emails">
+          <h6 class="h6-contacto-mails">e-mails:</h6>
+
+        </div>
+        <div class="div-contacto-mailss">
+          <div class="contacto-yasmin">
+            <p class="p-yasmin">gruppo2seguros@gmail.com</p>
+            <p class="p-yasmin2"><strong> Yasmin Anabella Damato</strong></p>
+          </div>
+          <div class="contacto-analia">
+            <p>analia.siniestros@gmail.com</p>
+            <p><strong>Analia Ponce - Ejecuticva de siniestros</strong></p>
+          </div>
+
+          <div class="contacto-tatiana">
+            <p>gestionintegralsiniestros@gmail.com</p>
+            <p><strong>Tatiana Massida - Abogada - Reclamos de terceros</strong></p>
+          </div>
+
+
+
+        </div>
+        <div class="div-mobile-contactos">
+          <div class="contacto-yasmin-mobile">
+            <p class="p-yasmin2"><strong> Yasmin Anabella Damato:</strong></p>
+            <p class="p-yasmin">gruppo2seguros@gmail.com</p>
+
+          </div>
+          <div class="contacto-analia-mobile">
+            <p><strong>Analia Ponce - Ejecuticva de siniestros:</strong></p>
+            <p>analia.siniestros@gmail.com</p>
+          </div>
+
+          <div class="contacto-tatiana-mobile">
+            <p><strong>Tatiana Massida - Abogada <br> Reclamos de terceros:</strong></p>
+            <p>gestionintegralsiniestros@gmail.com</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="horarios">
+        <H3>HORARIOS DE ATENCION OFICINA:</H3>
+        <P>Lunes a Viernes de 9 a 17hs.Sábados de 10 a 12hs</P>
+      </div>
+      <div class="QR">
+        <img src="./imagenes/QR-FOOTER_Mesa de trabajo 1.png" alt="">
+      </div>
+    </footer>
+
+    <!-- Boton de WhatsApp -->
+    <a href="https://wa.me/541133710828" class="btn-wsp" target="_blank">
+      <i class="fa fa-whatsapp icono"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

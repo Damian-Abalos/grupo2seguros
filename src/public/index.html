@@ -921,11 +921,11 @@
         <div class="div-form">
           <form class="form" onsubmit="return validarConsulta()" id="formulario-de-consultas">
             <p class="text-danger mb-0" id="error-nombre"></p>
-            <input class="form-im" name="nombre" id="nombre" placeholder="nombre" type="name">
+            <input class="form-im" name="name" id="nombre" placeholder="nombre" type="name">
             <p class="text-danger mb-0" id="error-email"></p>
             <input class="form-im" name="email" id="email" placeholder="email" type="email">
             <p class="text-danger mb-0" id="error-telefono"></p>
-            <input class="form-im" name="telefono" id="telefono" placeholder="telefono" type="tel">
+            <input class="form-im" name="tel" id="telefono" placeholder="telefono" type="tel">
             <p class="text-danger mb-0" id="error-consulta"></p>
             <textarea placeholder="consulta" name="consulta" class="form-im " id="consulta" type="text"
               style="height: 100px"></textarea>
@@ -936,7 +936,10 @@
         </div>
       </div>
     </section>
-
+    $nombre = $_POST['name'];
+    $email = $_POST['email'];
+    $telefono = $_POST['tel'];
+    $consulta = $_POST['consulta'];
     <!-- seccion contacto -->
     <div class="seccion-contacto" id="seccion-contacto">
       <div class="div-sentrar-contacto">
